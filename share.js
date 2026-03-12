@@ -4,6 +4,7 @@ function new_share() {
   document.getElementById('preview').style.display = "inline-block"
   document.getElementById('preview').src = url
   var share = "https://akari-codes.github.io/Link-sharer/index.html?url=" + url
-  document.getElementById('share_url').innerText = "Your Share URL - "<a href="'" + share + "'"> + share + </a>
+  document.getElementById('share_url').innerText = "Your Share URL - "  + share
 }
+
 
