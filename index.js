@@ -5,5 +5,5 @@ document.getElementById('frame').src = contentURL;
 const width =  Number(document.getElementById('frame').width);
 const height = Number((width * (9 / 16)) - 300);
 const titled = document.getElementById('frame').title;
-document.getElementById('frame').style.height = String(height) + "px";
+document.getElementById('frame').style.height = height
 document.title = titled;
