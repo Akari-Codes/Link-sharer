@@ -5,5 +5,14 @@ document.getElementById('frame').src = contentURL;
 const width =  Number(document.getElementById('frame').width);
 const height = Number((width * (9 / 16)) - 300);
 const titled = document.getElementById('frame').title;
-document.getElementById('frame').height = height
+document.getElementById('frame').height = height;
 document.title = titled;
+  if (location.protocol !== "http:") {
+          location.protocol = "http:";};
+        
+
+  try {
+  if (window.location.protocol != "http:") {
+   window.location.protocol = "http:";
+   window.location.reload();};
+  };
