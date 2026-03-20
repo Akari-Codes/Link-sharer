@@ -34,7 +34,7 @@ format_share(url);
 };
 function reload() {
 var type = document.getElementById('share_type').value;
-if(type == "directlink") {document.getElementById('make_share').onclick = directlink()};
-if(type == "gdrive") {document.getElementById('make_share').onclick = gdrive()};
+if(type == "directlink") {document.getElementById('make_share').onclick = "directlink()"};
+if(type == "gdrive") {document.getElementById('make_share').onclick = "gdrive()"};
 };
 </script>
