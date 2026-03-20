@@ -18,5 +18,5 @@ format_share(url);
 function reload() {
 var type = document.getElementById('share_type').value;
 var func = type + "()";
-document.getElementById('make_share').onchange = func;
+document.getElementById('make_share').onclick = func;
 };
