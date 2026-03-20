@@ -3,13 +3,13 @@
 <title>Share Content Via URL</title>
 <h2>Create a Share:</h2>
 <p>Share Type</p>
-<select id="share_type">
-    <option value="direct-link">Direct Link</option>
-    <option value="google-drive-share">Google Drive Share</option>
+<select id="share_type" onchange="reload()">
+    <option value="directlink">Direct Link</option>
+    <option value="gdrive">Google Drive Share</option>
 </select>
 <p>Enter URL:</p>
 <input id="share", placeholder="Enter Share...">
-<button onclick="new_share()">Submit</button>
+<button id="make_share" onclick="directlink()">Submit</button>
 <p id="preview_text"></p>
 <iframe id="preview" width="300px" style="display:none;"></iframe>
 <p id="share_url"></p>
