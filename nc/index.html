@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share Via NC Public</title>
+<h2>Convert Internal Nextcloud Share to External Share:</h2>
+<button onclick="window.location.replace('../share-dl.html')">Back</button>
+<p>Enter NC Share:</p>
+<input id="share", placeholder="Enter NC Share...">
+<button id="make_share" onclick="directlink()">Submit</button>
+<p id="preview_text"></p>
+<iframe id="preview" width="300px" style="display:none;"></iframe>
+<p id="share_url"></p>
+<br>
+<script>
+function format_share(url) {
+document.getElementById('preview_text').innerText = "Preview Content";
+document.getElementById('preview').style.display = "inline-block";
+document.getElementById('preview').src = url;
+var share = url.replace("http://100.96.132.93:4434", "https://akaris-main.ferret-smoot.ts.net:10000");
+document.getElementById('share_url').innerText = "Your Share URL - " + share;
+};
+function directlink() {
+var url = document.getElementById('share').value;
+format_share(url);
+};
+</script>
