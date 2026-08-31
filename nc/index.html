@@ -6,16 +6,11 @@
 <p>Enter NC Share:</p>
 <input id="share", placeholder="Enter NC Share...">
 <button id="make_share" onclick="directlink()">Submit</button>
-<p id="preview_text"></p>
-<iframe id="preview" width="300px" style="display:none;"></iframe>
 <p id="share_url"></p>
 <p id="full"></p>
 <br>
 <script>
 function format_share(url) {
-document.getElementById('preview_text').innerText = "Preview Content";
-document.getElementById('preview').style.display = "inline-block";
-document.getElementById('preview').src = url;
 var share = url.replace("http://100.96.132.93:4434", "https://akaris-main.ferret-smoot.ts.net:10000");
 document.getElementById('share_url').innerHTML = "Your Share URL - <a href='" + share + "'>" + share + "</a>";
 var sharea = "https://akari-codes.github.io/Link-sharer/index.html?url=" + share;
