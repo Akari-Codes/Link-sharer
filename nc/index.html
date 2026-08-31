@@ -17,9 +17,9 @@ document.getElementById('preview_text').innerText = "Preview Content";
 document.getElementById('preview').style.display = "inline-block";
 document.getElementById('preview').src = url;
 var share = url.replace("http://100.96.132.93:4434", "https://akaris-main.ferret-smoot.ts.net:10000");
-document.getElementById('share_url').innerText = "Your Share URL - " + share;
+document.getElementById('share_url').innerHTML = "Your Share URL - <a href='" + share + "'>" + share + "</a>";
 var sharea = "https://akari-codes.github.io/Link-sharer/index.html?url=" + share;
-document.getElementById('full').innerText = "Your Full Share URL - " + sharea;
+document.getElementById('full').innerHTML = "Your Full Share URL - <a href='" + sharea + "'>" + sharea + "</a>";
 };
 function directlink() {
 var url = document.getElementById('share').value;
